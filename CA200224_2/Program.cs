@@ -27,7 +27,8 @@ namespace CA200224_2
                 / (float)list.Count * 100);
             
             //4.f
-            var ch = list.Where(c => c.Suly < 360 && c.Kor >= 8)
+            var ch = list
+                .Where(c => c.Suly < 360 && c.Kor >= 8)
                 .SingleOrDefault();
             Console.WriteLine(
                 ch is null 
